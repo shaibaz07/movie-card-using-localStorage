@@ -1,42 +1,42 @@
 const cl = console.log;
 
-// let moviesArr = [
-//     {
-//         movieName: "The Paradise",
-//         movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUlltowNLeCOR4fg6ZWxnQ1j-urHejk1GzHtE6y7yQLFFq5TBLmgiPU0i0rWqkrIyBo6njCHU_p9k4jihDnhBKc_7HbmaXKiYYmtZi-FGzw&s=10",
-//         movieRating: 5,
-//         movieDescription: "Jadal leads a marginalized tribe in an enduring battle against systemic injustice and discrimination, fighting to secure their fundamental right to legal recognition and citizenship.",
-//         movieId: "101"
-//     },
-//     {
-//         movieName: "Salaar: Part 1 – Ceasefire",
-//         movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbx_QUNuOasz4WGAc1jJRdZBz9V6YA0vHbsM4pL4KAcy1Vxm5qFaOwEXTlwZ8DF1dfYZj5vqLDAEGJHQR4tM4l_DUz-wsGFWZsZMLlpN0pw&s=10",
-//         movieRating: 5,
-//         movieDescription: "Two former friends become enemies in a kingdom torn by power struggles. Betrayal, bloodshed and a shaky alliance decide the fate of the realm in this gripping tale of loyalty and treachery.",
-//         movieId: "02"
-//     },
-//     {
-//         movieName: "Dragon",
-//         movieImg: "https://cdn.district.in/movies-assets/images/cinema/dragon-hori-0bd84800-544b-11f1-ab50-499f2c1e1251.jpg",
-//         movieRating: 1,
-//         movieDescription: "Dragon (20th) is an upcoming pan-Indian period action drama film written and directed by Prashanth Neel and starring N. T. Rama Rao Jr. (Jr. NTR) in the lead role, slated for theatrical release on June 11, 202",
-//         movieId: "03"
-//     },
-//     {
-//         movieName: "12Th Fail",
-//         movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxboucyZQZKUtwPUmjQmS_186_mJhIrdrk-I2rXymrA&s=10",
-//         movieRating: 2,
-//         movieDesciption: "A young lion learns to accept his responsibility as the future king.",
-//         movieId: "04"
-//     },
-//     {
-//         movieName: "Sita Ramam",
-//         movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFV6Y3MucgipWSX1SVudQxKmoQiSoHPK4g0pAClk0Og&s=10",
-//         movieRating: 5,
-//         movieDescription: "Three friends experience friendship, education, and the challenges of college life.",
-//         movieId: "3"
-//     }
-// ];
+let moviesArr = [
+    {
+        movieName: "The Paradise",
+        movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUlltowNLeCOR4fg6ZWxnQ1j-urHejk1GzHtE6y7yQLFFq5TBLmgiPU0i0rWqkrIyBo6njCHU_p9k4jihDnhBKc_7HbmaXKiYYmtZi-FGzw&s=10",
+        movieRating: 5,
+        movieDescription: "Jadal leads a marginalized tribe in an enduring battle against systemic injustice and discrimination, fighting to secure their fundamental right to legal recognition and citizenship.",
+        movieId: "101"
+    },
+    {
+        movieName: "Salaar: Part 1 – Ceasefire",
+        movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbx_QUNuOasz4WGAc1jJRdZBz9V6YA0vHbsM4pL4KAcy1Vxm5qFaOwEXTlwZ8DF1dfYZj5vqLDAEGJHQR4tM4l_DUz-wsGFWZsZMLlpN0pw&s=10",
+        movieRating: 5,
+        movieDescription: "Two former friends become enemies in a kingdom torn by power struggles. Betrayal, bloodshed and a shaky alliance decide the fate of the realm in this gripping tale of loyalty and treachery.",
+        movieId: "02"
+    },
+    {
+        movieName: "Dragon",
+        movieImg: "https://cdn.district.in/movies-assets/images/cinema/dragon-hori-0bd84800-544b-11f1-ab50-499f2c1e1251.jpg",
+        movieRating: 1,
+        movieDescription: "Dragon (20th) is an upcoming pan-Indian period action drama film written and directed by Prashanth Neel and starring N. T. Rama Rao Jr. (Jr. NTR) in the lead role, slated for theatrical release on June 11, 202",
+        movieId: "03"
+    },
+    {
+        movieName: "12Th Fail",
+        movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxboucyZQZKUtwPUmjQmS_186_mJhIrdrk-I2rXymrA&s=10",
+        movieRating: 2,
+        movieDesciption: "A young lion learns to accept his responsibility as the future king.",
+        movieId: "04"
+    },
+    {
+        movieName: "Sita Ramam",
+        movieImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFV6Y3MucgipWSX1SVudQxKmoQiSoHPK4g0pAClk0Og&s=10",
+        movieRating: 5,
+        movieDescription: "Three friends experience friendship, education, and the challenges of college life.",
+        movieId: "3"
+    }
+];
 
 
 localStorage.setItem('moviesArr', JSON.stringify(moviesArr))
@@ -71,13 +71,13 @@ function snackBar(msg , icon){
 
 const movieContainer = document.getElementById('movieContainer')
 
-let moviesData = localStorage.getItem('moviesArr')
+// let moviesData = localStorage.getItem('moviesArr')
 
-let moviesArr = []
+// let moviesArr = []
 
-if(moviesData){
-    moviesArr = JSON.parse(moviesData)
-}
+// if(moviesData){
+//     moviesArr = JSON.parse(moviesData)
+// }
 
 // cl(moviesArr)
 
